@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketplace</title>
-</head>
-<body>
-    <h1>Welcome to Marketplace</h1>
-</body>
-</html>
+{% extends 'core/base.html' %}
+{% block title %}
+  Welcome
+{% endblock %}
+{% block content %}
+  <p>This the front page</p>
+  <p>
+    Contact page : <a href="{% url 'contact' %}" class="underline">link</a>
+  </p>
+{% endblock %}
