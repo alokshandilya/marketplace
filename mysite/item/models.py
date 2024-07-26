@@ -20,7 +20,7 @@ class Item(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=0)
     image = models.ImageField(upload_to="item_images/")
     is_sold = models.BooleanField(default=False)
-    crated_by = models.ForeignKey(User, related_name="items", on_delete=models.CASCADE)
+    created_by = models.ForeignKey(User, related_name="items", on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     category = models.ForeignKey(
         Category, related_name="items", on_delete=models.CASCADE
