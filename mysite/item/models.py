@@ -26,8 +26,5 @@ class Item(models.Model):
         Category, related_name="items", on_delete=models.CASCADE
     )
 
-    class Meta:
-        ordering = ("name",)
-
     def __str__(self):
         return self.name

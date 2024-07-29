@@ -1,11 +1,13 @@
 from django.urls import path
-from .views import detail, new, edit, delete
+
+from . import views
 
 app_name = "item"
 
 urlpatterns = [
-    path("new/", new, name="new"),
-    path("<int:pk>/", detail, name="detail"),
-    path("<int:pk>/edit/", edit, name="edit"),
-    path("<int:pk>/delete/", delete, name="delete"),
+    path("", views.items, name="items"),
+    path("new/", views.new, name="new"),
+    path("<int:pk>/", views.detail, name="detail"),
+    path("<int:pk>/edit/", views.edit, name="edit"),
+    path("<int:pk>/delete/", views.delete, name="delete"),
 ]
