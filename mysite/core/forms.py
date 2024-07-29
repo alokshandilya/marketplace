@@ -8,8 +8,7 @@ class LoginForm(AuthenticationForm):
         widget=forms.TextInput(
             attrs={
                 "placeholder": "Enter username",
-                "class": "py-4 px-6 rounded-xl",
-                "style": "width: 100%",
+                "class": "w-full py-4 px-6 rounded-xl",
             }
         )
     )
@@ -17,8 +16,7 @@ class LoginForm(AuthenticationForm):
         widget=forms.PasswordInput(
             attrs={
                 "placeholder": "Enter Password",
-                "class": "py-4 px-6 rounded-xl",
-                "style": "width: 100%",
+                "class": "w-full py-4 px-6 rounded-xl",
             }
         )
     )
@@ -33,9 +31,7 @@ class SignupForm(UserCreationForm):
         widget=forms.TextInput(
             attrs={
                 "placeholder": "Enter username",
-                "class": "py-4 px-6 rounded-xl",
-                # TODO: fix w-full tailwind class not working
-                "style": "width: 100%",
+                "class": "w-full py-4 px-6 rounded-xl",
             }
         )
     )
@@ -43,8 +39,7 @@ class SignupForm(UserCreationForm):
         widget=forms.EmailInput(
             attrs={
                 "placeholder": "Enter Email",
-                "class": "py-4 px-6 rounded-xl",
-                "style": "width: 100%",
+                "class": "w-full py-4 px-6 rounded-xl",
             }
         )
     )
@@ -52,8 +47,7 @@ class SignupForm(UserCreationForm):
         widget=forms.PasswordInput(
             attrs={
                 "placeholder": "Enter Password",
-                "class": "py-4 px-6 rounded-xl",
-                "style": "width: 100%",
+                "class": "w-full py-4 px-6 rounded-xl",
             }
         )
     )
@@ -61,8 +55,7 @@ class SignupForm(UserCreationForm):
         widget=forms.PasswordInput(
             attrs={
                 "placeholder": "Confirm Password",
-                "class": "py-4 px-6 rounded-xl",
-                "style": "width: 100%",
+                "class": "w-full py-4 px-6 rounded-xl",
             }
         )
     )
