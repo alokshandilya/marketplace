@@ -14,29 +14,34 @@ class NewItemForm(forms.ModelForm):
             "category": forms.Select(
                 attrs={
                     "class": INPUT_CLASSES,
+                    "required": True,
                 }
             ),
             "name": forms.TextInput(
                 attrs={
                     "placeholder": "Enter item name",
                     "class": INPUT_CLASSES,
+                    "required": True,
                 }
             ),
             "description": forms.Textarea(
                 attrs={
                     "placeholder": "Enter item description",
                     "class": INPUT_CLASSES,
+                    "required": True,
                 }
             ),
             "price": forms.NumberInput(
                 attrs={
                     "placeholder": "Enter item price",
                     "class": INPUT_CLASSES,
+                    "required": True,
                 }
             ),
             "image": forms.FileInput(
                 attrs={
                     "class": INPUT_CLASSES,
+                    "required": True,
                 }
             ),
         }
