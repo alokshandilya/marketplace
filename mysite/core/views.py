@@ -26,3 +26,8 @@ def signup(request):
     else:
         form = SignupForm()
     return render(request, "core/signup.html", {"form": form})
+
+
+def view_logout(request):
+    logout(request)
+    return redirect("core:index")
