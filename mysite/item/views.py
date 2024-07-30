@@ -75,7 +75,7 @@ def edit(request, pk):
         if form.is_valid():
             form.save()
 
-            return redirect("item:detail", pk=item.id)
+            return redirect("item:detail", pk=pk)
     else:
         form = EditItemForm(instance=item)
 
