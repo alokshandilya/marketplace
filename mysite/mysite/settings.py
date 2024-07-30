@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "core",
     "item",
     "dashboard",
+    "conversation",
     "tailwind",
     "theme",
     "django_browser_reload",
